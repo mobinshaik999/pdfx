@@ -6,11 +6,11 @@ import 'package:pdfx/src/renderer/interfaces/page.dart';
 
 class PdfPageImageProvider extends ImageProvider<PdfPageImageProvider> {
   const PdfPageImageProvider(
-    this.pdfPageImage,
-    this.pageNumber,
-    this.documentId, {
-    this.scale = 1.0,
-  });
+      this.pdfPageImage,
+      this.pageNumber,
+      this.documentId, {
+        this.scale = 1.0,
+      });
 
   final Future<PdfPageImage> pdfPageImage;
   final int pageNumber;
